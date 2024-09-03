@@ -1,12 +1,15 @@
 import { PageTitle } from "../Components/PageTitle/PageTitle"
 
-export function About () {
+
+export function NoPage () {
     return (
         <>
-        <PageTitle title="About" />
+        <PageTitle title="404" />
         <div>
-            <h1>About page</h1>
+            <h1>404...Page not found</h1>
         </div>
+  
         </>
     )
+        
 }

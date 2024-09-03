@@ -5,6 +5,7 @@ import { About } from "./Pages/About";
 import { Concepts } from "./Pages/Concepts";
 import { Contact } from "./Pages/Contact";
 import { Home } from "./Pages/Home";
+import { NoPage } from "./Pages/NoPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.scss";
 
