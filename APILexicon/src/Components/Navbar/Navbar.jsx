@@ -20,6 +20,10 @@ export function Navbar() {
         </li>
       </ul>
       <div className={style.navCirle}></div>
+
+      <div className={style.bookStyling}>
+          <BookIcon/>
+      </div>
     </nav>
   );
 }

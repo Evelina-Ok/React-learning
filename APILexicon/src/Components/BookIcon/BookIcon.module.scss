@@ -1,0 +1,7 @@
+@use '../../style/variables' as *;
+
+.bookIconStyling {
+    background-color: $green;
+    display: block;
+    width: 100px;
+}
