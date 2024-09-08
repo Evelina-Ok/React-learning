@@ -1,0 +1,33 @@
+@use "../../Styles/_placeholders.scss" as *;
+@use "../../Styles/_variables.scss" as *;
+
+
+.headerStyling {
+    background-image: url('../../assets/header.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 40vh;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+
+
+    .headerText {
+
+        h1 {
+            position: absolute;           
+            left: 50%;
+            top: 18%;
+            transform: translate(-50%);
+            @extend %marck;
+            font-size: 6rem;
+            font-weight: 100;
+            color: $white;
+            text-shadow: 2px 2px 4px #5A5A5A;
+            
+        }
+    }
+}

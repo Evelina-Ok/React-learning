@@ -1,0 +1,44 @@
+@use "../../Styles/_placeholders.scss" as *;
+@use "../../Styles/_variables.scss" as *;
+
+.navStyling {
+    background-color: $green;
+    position: relative;
+    
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        padding: 0;
+
+        li {
+            list-style: none;            
+            text-align: center;
+            @extend %karla;
+            text-transform: uppercase;
+            padding: 1rem 2rem;
+            z-index: 999;
+            min-width: 3rem;
+
+            a {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .navCirle {
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        background-color: $green;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 2;
+        margin-top: -6rem;
+        
+    }
+}
