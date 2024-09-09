@@ -1,0 +1,34 @@
+@use "../../Styles/_placeholders.scss" as *;
+@use "../../Styles/_variables.scss" as *;
+
+.footerStyling {
+    background-color: $green;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0;
+    padding: 2rem;
+        li {
+            margin: auto;
+            padding: 0;
+            list-style: none;  
+            @extend %karma;
+            font-weight: 100;
+            font-size: 0.7rem;
+            color: $white;
+            text-align: justify;
+            justify-content: left
+        }
+
+    .logoStyling {
+        
+        h4 {
+            @extend %marck;
+            color: $white;
+            font-weight: 100;
+            margin: 0;
+            padding: 0;
+
+        }
+    }
+}

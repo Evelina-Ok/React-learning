@@ -19,7 +19,7 @@
             @extend %karla;
             text-transform: uppercase;
             padding: 1rem 2rem;
-            z-index: 999;
+            z-index: 5;
             min-width: 3rem;
 
             a {
@@ -40,5 +40,11 @@
         z-index: 2;
         margin-top: -6rem;
         
+    }
+
+    .bookStyling {
+        margin: 0;
+        padding: 0;
+        height: 0;
     }
 }

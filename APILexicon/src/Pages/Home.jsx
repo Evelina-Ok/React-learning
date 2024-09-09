@@ -1,13 +1,20 @@
 import { PageTitle } from "../Components/PageTitle/PageTitle"
 
-import { Header } from "../Components/Header/Header" 
+import { Searchbar } from "../Components/Searchbar/Searchbar"
 
 export function Home () {
     return (
         <>
-        <PageTitle title="Home" />
+        
         <div>
-        < Header />
+        <PageTitle title="Home" />
+        <Searchbar
+        title="Enter a word to search for"
+        action={() => SearchWord()}
+        input={(e) => setSearchedWord(e.target.value)}>
+            
+        </Searchbar>
+        
         </div>
   
         </>

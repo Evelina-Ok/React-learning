@@ -1,4 +1,5 @@
 import style from "./Footer.module.scss";
+import { BookIcon } from "../BookIcon/BookIcon";
 
 export function Footer () {
     return (

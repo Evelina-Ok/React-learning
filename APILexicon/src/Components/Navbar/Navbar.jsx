@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import style from "./Navbar.module.scss";
+import { BookIcon } from "../BookIcon/BookIcon";
 
 export function Navbar() {
   return (

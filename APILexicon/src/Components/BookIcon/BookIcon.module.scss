@@ -1,7 +1,23 @@
-@use '../../style/variables' as *;
+@use "../../Styles/_variables.scss" as *;
 
 .bookIconStyling {
-    background-color: $green;
-    display: block;
-    width: 100px;
+  background-color: $dustgreen;
+  z-index: 9;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+      margin: auto;
+
+  img {
+    width: 2rem;
+    z-index: 10;
+    display: absolute;
+  
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
 }
