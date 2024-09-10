@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { CardAvatar } from "../Card/CardAvatar";
 
-export function FetchMasterclass () {
+export function FetchMasterclass() {
 const url = `https://jsonplaceholder.typicode.com/users`;
 
   const [userData, setUserData] = useState(null);

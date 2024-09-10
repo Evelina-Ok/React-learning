@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.scss";
 import { CardAvatar } from "./Components/Card/CardAvatar";
+import { ShowUsers } from "./Components/Users/Users";
 // import { FetchMasterclass } from "./Components/Fetch/FetchMasterClass";
 import { useFetch } from './Components/Fetch/UseFetch'
 
