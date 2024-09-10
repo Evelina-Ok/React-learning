@@ -1,10 +1,17 @@
 import { NavLink } from "react-router-dom";
 import style from "./Navbar.module.scss";
 import { BookIcon } from "../BookIcon/BookIcon";
+import { useContext } from "react";
 
 export function Navbar() {
+  // we're adding 'handleChangeDarkMode' because we're making a sort of a button only in Navbar that will trigger dark mode in all other places like components or pages
+  const {isDarkMode, handleChangeDarkMode} = useContext(ThemedContext)
+
+  console.log('isDarkMode', isDarkMode);
+  
+
   return (
-    <nav className={style.navStyling}>
+    <nav className={isDarkMode === true ? style.darkModeNav : style.navStyling}>
       <ul>
         <li>
           {/* when we are on the "home" page, meaning active, the page link will be underline, otherwise it won't be */}

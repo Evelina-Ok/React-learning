@@ -47,4 +47,10 @@
         padding: 0;
         height: 0;
     }
+
+    .darkModeNav {
+        @extend .navStyling;
+        background-color: #171840;
+        
+    }
 }
