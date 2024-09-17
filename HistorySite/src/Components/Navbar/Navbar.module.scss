@@ -1,0 +1,36 @@
+@use "../../Styles/_placeholders.scss" as *;
+@use "../../Styles/_variables.scss" as *;
+
+.navStyle {
+    
+    position: relative;
+    background-color: $background;
+    
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        padding: 0;
+        
+    
+
+        li {
+            list-style: none;
+            text-align: center;
+            @extend %linden;
+            text-transform: uppercase;
+            padding: 1rem 2rem;
+            z-index: 5;
+            min-width: 3rem;
+            margin-top: 5rem;
+            font-size: 2rem;
+            
+            a {
+                color: $htext;
+                text-decoration: none;
+            }
+        }
+    }
+}
